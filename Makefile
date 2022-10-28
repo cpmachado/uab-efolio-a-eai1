@@ -1,4 +1,4 @@
-MAIN=main.tex
+MAIN=2200909efolioA.tex
 LATEX=latexmk -pdf
 LATEX_CLEAN=latexmk -c
 LATEX_WATCH=latexmk -pdf -pvc
