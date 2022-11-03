@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{titling}
+\usepackage{cite}
 \usepackage[bookmarks=true, hidelinks]{hyperref}
 \usepackage[ddmmyyyy]{datetime}
 
@@ -26,6 +27,10 @@
 	pdfkeywords={Your PDF keywords}
 }
 
+\renewcommand*{\thesection}{}
+\renewcommand*{\thesubsection}{\arabic{subsection}}
+\renewcommand*{\thesubsubsection}{\arabic{subsection}.\arabic{subsubsection}}
+
 \begin{document}
 
 \include{./e-folio-a.tex}
@@ -34,4 +39,6 @@
 
 \include{./resolucao.tex}
 
+\bibliography{./bibliografia.bib}{}
+\bibliographystyle{plain}
 \end{document}

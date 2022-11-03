@@ -1,0 +1,61 @@
+\subsection{}
+
+\paragraph{} No ramo esquerdo da equação, temos uma série
+geométrica, para o qual a razão é $|r| < 1$. Como a razão $r$ verifica a
+condição, verificam-se todas as condições para aplicar o teorema 3, da página
+578 do livro\cite{santos2016calculo}.
+Pelo que podemos calcular a soma da série, com $a_0 = 1$, por
+
+\begin{align*}
+	\sum^{\infty}_{k = 0} r^k = \frac{a_0}{1 - r} = \frac{1}{1 - r}.
+\end{align*}
+
+\paragraph{Caso base}
+
+
+Para $m = 0$, verificamos que
+\begin{align*}
+	\sum^{\infty}_{k=0} r^m = \frac{r^0}{1 - r} = \frac{1}{1 - r}.
+\end{align*}
+
+Desta forma, prova-se o caso base.
+
+\paragraph{Hipótese de indução} Para $|r| < 1$, suponhamos que
+
+\begin{equation}
+\label{eqn:ex1-hipotese}
+	\sum^{\infty}_{k=m} r^k = \frac{r^m}{1 - r}, \; m \in \mathbb{N}_{0}.
+\end{equation}
+
+\paragraph{Tese de indução}
+
+\begin{equation}
+\label{eqn:ex1-tese}
+	\sum^{\infty}_{k=m+1} r^k = \frac{r^{m + 1}}{1 - r}
+\end{equation}
+
+\newpage
+
+\paragraph{Passo de indução}
+
+\paragraph{} A partir do ramo esquerdo da tese indução(equação \ref{eqn:ex1-tese}),
+vamos passar por uma substituição pela hipótese de indução
+(equação \ref{eqn:ex1-hipotese}), assim demonstrando a equivalência por indução.
+
+\begin{align*}
+	\sum^{\infty}_{k=m+1} r^k &= \left(\sum^{\infty}_{k=m} r^k\right) - r^m \\
+	&= \left(\frac{r^m}{1 - r}\right) - r^m \;
+	 \text{(aplica-se a hipótese da equação \ref{eqn:ex1-hipotese})}\\
+	&= \frac{r^m}{1 - r} - r^m \frac{1 - r}{1 - r}\\
+	&= \frac{r^m - r^m(1 - r)}{1 - r} \\
+	&= \frac{r^m - r^m + r^{m+1}}{1 - r} \\
+	&= \frac{r^{m+1}}{1 - r}\\
+\end{align*}
+
+
+\paragraph{Conclusão} Pelo método de indução matemática, podemos então
+concluir que, para $|r| < 1$, temos
+
+\begin{align*}
+	\sum^{\infty}_{k=m} r^k = \frac{r^m}{1 - r}, \; m \in \mathbb{N}_{0}.
+\end{align*}
