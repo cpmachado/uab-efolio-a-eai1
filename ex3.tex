@@ -1,0 +1,56 @@
+\subsection{}
+
+\paragraph{} Seja a sucessão $(a_n)_{n \in \mathbb{N}}$ como definido na
+equação \ref{eqn:ex3-suc}, cujos termos são maiores ou iguais a
+$-\frac{3}{5}$.
+
+\begin{equation}
+\label{eqn:ex3-suc}
+	a_n = 
+	\begin{cases}
+		a_1 = -\frac{2}{5}\\
+		a_{n + 1} = \frac{a_n - 3}{6}, \; n \in \mathbb{N}\\
+	\end{cases}
+\end{equation}
+
+\subsubsection{}
+
+\paragraph{} Comecemos por determinar $a_{n+1} - a_n$.
+
+\begin{align*}
+	a_{n+1} - a_n &= \frac{a_n - 3}{6} - a_n\\
+	&= \frac{a_n - 6 \cdot a_n - 3}{6}\\
+	&= \frac{- 5 \cdot a_n - 3}{6}\\
+	&= -\frac{5}{6} \cdot a_n - \frac{1}{2}\\
+\end{align*}
+
+\paragraph{} Seja $g: \mathbb{R} \to \mathbb{R}, g \in C^1$, com
+$g(a_n) = -\frac{5}{6} \cdot a_n - \frac{1}{2}$, podemos determinar se a
+sucessão é crescente, caso $g(a_n) > 0$, para um determinado $a_n$.
+
+\paragraph{} Para tal vamos calcular o zero da função $g(a_n)$:
+
+\begin{align*}
+	g(a_n) &= 0\\
+	\iff -\frac{5}{6} \cdot a_n - \frac{1}{2} &= 0\\
+	\iff -\frac{5}{6} \cdot a_n  &= \frac{1}{2}\\
+	\iff -5 \cdot a_n  &= 3\\
+	\iff a_n  &= -\frac{3}{5}\\
+\end{align*}
+
+\paragraph{} Para $a_n = -\frac{2}{5}$ , temos $g(a_n) = -\frac{13}{30} < 0$,
+como $a_n \geq -\frac{3}{5}$, podemos concluir que a sucessão é monótona
+decrescente e minorada por $-\frac{3}{5}$.
+
+\newpage
+
+\subsubsection{}
+
+\paragraph{} Dado que a sucessão $a_n$ é monótona e decrescente, e minorada
+por $-\frac{3}{5}$, podemos concluir que tanto o ínfimo como o supremo existem
+e que são:
+
+\begin{align*}
+	\inf{a_n : n \in \mathbb{N}} &= -\frac{3}{5}\\
+	\sup{a_n : n \in \mathbb{N}} &= a_0 = -\frac{2}{5}
+\end{align*}
